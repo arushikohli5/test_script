@@ -10,7 +10,8 @@ const PORT = 3000;
 app.use(bodyParser.json());
 
 // Load your API credentials from environment variables
-
+const API_KEY = process.env.API_KEY
+const API_SECRET = process.env.API_SECRET
 
 // Step 1: Create endpoint to receive alerts from TradingView
 app.post('/', async (req, res) => {
